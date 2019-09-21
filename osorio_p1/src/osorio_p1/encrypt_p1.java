@@ -17,6 +17,7 @@ public class encrypt_p1 {
 		for(i = 0; i < dataArr.length; i++) {
 			dataArr[(dataArr.length) - 1 - i] = ((int) ((rawData / Math.pow(10, i)) % 10));
 		}
+		
 		for(i = 0; i < dataArr.length; i++) {
 			dataArr[i] = ((dataArr[i] + 7) % 10);
 		}
